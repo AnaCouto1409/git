@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calcule seu IMC</title>
+  <link rel="stylesheet" href="aula5.css">
+  <script src="./js/index.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>calcule seu imc aqui</h1>
+      <p id="mesage">Olá Pessoa seu peso está normal ou saudável</p>
+    </header>
+    <main>
+      <form action="" method="get">
+        <label for="GET-name">Nome:</label>
+        <input type="text" name="name" id="GET-name" placeholder="Digite seu nome" required>
+        <label for="GET-weight">Peso:</label>
+        <input type="number" name="weight" id="GET-weight" placeholder="Digite seu peso em kg" required>
+        <label for="GET-height">Altura:</label>
+        <input type="number" name="height" id="GET-height" placeholder="Digite sua altura em m" required>
+        <input id="theButton" type="button" value="Calcular">
+        <input id="clearForm" type="button" value="Limpar">
+      </form>
+    </main>
+    <footer>
+      <p>
+        &copy; Todos os direitos <a href="https://github.com/AnaCouto1409" target="_blanck">Github</a>
+      </p>
+    </footer>
+  </div>
+</body>
+</html>
+
+
+
+
+
+
+-----------------------css---------------------------------------------
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family:Arial, Helvetica, sans-serif;
+  color:darkcyan;
+  box-sizing: border-box;
+
+}
+body {
+  background-image: url("https://th.bing.com/th/id/R.dd15390bb490a4549943bcec3710eb93?rik=G8X7P9mk8LRE4w&pid=ImgRaw&r=0");
+  background-color: #fff;
+  height: 400vh;
+  background-repeat: no-repeat;
+}
+
+.container {
+  width: 60vw;
+  height: 100vh;
+  /* background-color: rgba(255, 255, 0, 0.2); */
+  padding: 3vh 0 0 0;
+  /* margin-left: 1vw; */
+}
+
+header {
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 1vh;
+}
+
+header h1 {
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.8);
+  
+}
+main{
+  height: 500px;
+  width: 500px;
+  border: none;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.5);
+  margin: 0 auto;
+  position: relative;
+
+}
+
+main form {
+  position: absolute;
+  top: 30%;
+  left: 33%;
+}
+
+main form input{
+  display: block;
+  margin-bottom: 1em;
+  padding: 0.5em;
+  outline: none;
+  border: 0.5px solid darkcyan;
+}
+
+main form input[type="button"] {
+  display: inline;
+}
+
+footer {
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 3vh;
+}
+#mesage {
+  margin: 1vh 0;
+  display: none;
+  color: white;
+  font-size: 1rem;
+}
